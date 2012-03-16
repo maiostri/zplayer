@@ -1,0 +1,10 @@
+all:
+	unzip ./lib/gstreamer-java-1.2 -d ./build/
+	unzip ./jl1.0.1.jar -d ./build/
+	unzip ./jna-3.0.9 -d ./build/
+	javac src/*.java -d ./build/
+	
+	
+
+run:
+	java -cp ../build/:. Movie
